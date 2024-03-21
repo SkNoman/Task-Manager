@@ -22,67 +22,68 @@ class __DashboardScreenStateState extends State<DashboardScreen> {
     return Scaffold(
         appBar: _buildAppBar(),
         extendBodyBehindAppBar: true,
-        bottomNavigationBar: Container(
-          decoration: BoxDecoration(
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(30),
-                topRight: Radius.circular(30),
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
-                  blurRadius: 10,
-                  spreadRadius: 5,
-                ),
-              ]),
-          child: ClipRRect(
-            borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(30),
-              topRight: Radius.circular(30),
-            ),
-            child: BottomNavigationBar(
-              backgroundColor: Colors.white,
-              selectedItemColor: Colors.blueAccent,
-              unselectedItemColor: Colors.grey,
-              items: const [
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home_rounded,
-                    size: 30,
-                  ),
-                  label: 'Home',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.person_rounded,
-                    size: 30,
-                  ),
-                  label: 'Profile',
-                )
-              ],
-              onTap: (index) {
-                setState(() {
-                  activeInex = index;
-                });
-              },
-            ),
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black,
-          onPressed: () {
-            Navigator.pushNamed(context, '/taskcreate');
-          },
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: const Icon(
-            Icons.add,
-            color: Colors.white,
-            size: 30,
-          ),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        // bottomNavigationBar: Container
+        // (
+        //   decoration: BoxDecoration(
+        //       borderRadius: const BorderRadius.only(
+        //         topLeft: Radius.circular(30),
+        //         topRight: Radius.circular(30),
+        //       ),
+        //       boxShadow: [
+        //         BoxShadow(
+        //           color: Colors.grey.withOpacity(0.2),
+        //           blurRadius: 10,
+        //           spreadRadius: 5,
+        //         ),
+        //       ]),
+        //   child: ClipRRect(
+        //     borderRadius: const BorderRadius.only(
+        //       topLeft: Radius.circular(30),
+        //       topRight: Radius.circular(30),
+        //     ),
+        //     child: BottomNavigationBar(
+        //       backgroundColor: Colors.white,
+        //       selectedItemColor: Colors.blueAccent,
+        //       unselectedItemColor: Colors.grey,
+        //       items: const [
+        //         BottomNavigationBarItem(
+        //           icon: Icon(
+        //             Icons.home_rounded,
+        //             size: 30,
+        //           ),
+        //           label: 'Home',
+        //         ),
+        //         BottomNavigationBarItem(
+        //           icon: Icon(
+        //             Icons.person_rounded,
+        //             size: 30,
+        //           ),
+        //           label: 'Profile',
+        //         )
+        //       ],
+        //       onTap: (index) {
+        //         setState(() {
+        //           activeInex = index;
+        //         });
+        //       },
+        //     ),
+        //   ),
+        // ),
+        // floatingActionButton: FloatingActionButton(
+        //   backgroundColor: Colors.black,
+        //   onPressed: () {
+        //     Navigator.pushNamed(context, '/taskcreate');
+        //   },
+        //   shape: RoundedRectangleBorder(
+        //     borderRadius: BorderRadius.circular(10),
+        //   ),
+        //   child: const Icon(
+        //     Icons.add,
+        //     color: Colors.white,
+        //     size: 30,
+        //   ),
+        // ),
+        // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         body: _pages[activeInex]);
   }
 }
