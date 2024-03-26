@@ -18,13 +18,13 @@ class _PendingEventListState extends State<PendingEventList> {
         taskComments: '2 comments'),
     const PendingEventCardItem(
         urlTaskAssignee: 'assets/images/p2.png',
-        taskTitle: 'Marcel Day',
+        taskTitle: 'Home Painting',
         taskCreatedTime: '11.20 PM',
         taskPrioity: 'Medium Priority',
-        taskComments: '0 comments'),
+        taskComments: '1 comments'),
     const PendingEventCardItem(
-        urlTaskAssignee: 'assets/images/p1.png',
-        taskTitle: 'Walton Day',
+        urlTaskAssignee: 'assets/images/p3.png',
+        taskTitle: 'Crafting Hall Room',
         taskCreatedTime: '10.30 AM',
         taskPrioity: 'Low Priority',
         taskComments: '3 comments'),
