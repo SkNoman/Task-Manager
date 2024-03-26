@@ -11,10 +11,19 @@ class BudgetPage extends StatefulWidget {
 class _BudgetPageState extends State<BudgetPage> {
   @override
   Widget build(BuildContext context) {
-    return const CustomBG(
+    return CustomBG(
       child: Column(
         children: [
-          Text('Budget Page'),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: const Text(
+              'This page is under development',
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.white,
+              ),
+            ),
+          ),
         ],
       ),
     );

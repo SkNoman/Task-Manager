@@ -37,7 +37,7 @@ Widget _buildMenu(
       alignment: Alignment.center,
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-          color: menuList.bgColor, borderRadius: BorderRadius.circular(20)),
+          color: menuList.bgColor, borderRadius: BorderRadius.circular(10)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

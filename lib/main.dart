@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager/screens/budgetpage.dart';
 import 'package:task_manager/screens/dashboard.dart';
 import 'package:task_manager/screens/forget_password.dart';
 import 'package:task_manager/screens/signin_screen.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/forgetpassword': (context) => const ForgetPasswordScreen(),
         '/dashboard': (context) => const DashboardScreen(),
         '/taskcreate': (context) => const TaskCreate(),
+        '/budgetpage': (context) => const BudgetPage(),
       },
     );
   }

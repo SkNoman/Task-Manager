@@ -11,10 +11,19 @@ class TaskCreate extends StatefulWidget {
 class _TaskCreateState extends State<TaskCreate> {
   @override
   Widget build(BuildContext context) {
-    return const CustomBG(
+    return CustomBG(
       child: Column(
         children: [
-          Text('Create Task'),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: const Text(
+              'This page is under development',
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.white,
+              ),
+            ),
+          ),
         ],
       ),
     );

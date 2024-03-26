@@ -28,13 +28,19 @@ class _PendingEventListState extends State<PendingEventList> {
         taskCreatedTime: '10.30 AM',
         taskPrioity: 'Low Priority',
         taskComments: '3 comments'),
+    const PendingEventCardItem(
+        urlTaskAssignee: 'assets/images/task_icon.png',
+        taskTitle: 'Create Task Management App',
+        taskCreatedTime: '07.00 PM',
+        taskPrioity: 'High Priority',
+        taskComments: '4 comments'),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.fromLTRB(10, 8, 10, 0),
-      height: 120,
+      height: 112,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: task.length,
@@ -52,6 +58,7 @@ Widget buildCard({
 }) =>
     Container(
       width: 300,
+      height: 112,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
@@ -113,9 +120,9 @@ Widget buildCard({
                         color: item.taskPrioity == 'High Priority'
                             ? const Color.fromRGBO(232, 45, 90, 1)
                             : item.taskPrioity == 'Medium Priority'
-                                ? Colors.blue
+                                ? Colors.blue.shade500
                                 : item.taskPrioity == 'Low Priority'
-                                    ? Colors.green
+                                    ? Colors.grey.shade700
                                     : Colors.black,
                       ),
                     ),

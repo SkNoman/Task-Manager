@@ -22,15 +22,18 @@ class Menu {
       Menu(
           icon: 'assets/images/food_icon.png',
           title: 'Food',
-          bgColor: const Color.fromRGBO(238, 255, 235, 1)),
+          bgColor: const Color.fromRGBO(238, 255, 235, 1),
+          route: '/budgetpage'),
       Menu(
           icon: 'assets/images/medical_icon.png',
           title: 'Medical',
-          bgColor: const Color.fromRGBO(235, 246, 255, 1)),
+          bgColor: const Color.fromRGBO(235, 246, 255, 1),
+          route: '/budgetpage'),
       Menu(
           icon: 'assets/images/event_icon.png',
           title: 'Event',
-          bgColor: const Color.fromRGBO(241, 241, 241, 1)),
+          bgColor: const Color.fromRGBO(241, 241, 241, 1),
+          route: '/budgetpage'),
     ];
   }
 }

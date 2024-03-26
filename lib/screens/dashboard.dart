@@ -100,41 +100,47 @@ AppBar _buildAppBar() {
             margin: const EdgeInsets.only(top: 5),
             height: 40,
             width: 40,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.asset('assets/images/user.png'),
+            child: GestureDetector(
+              onTap: () {},
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  'assets/images/dperson.png',
+                  height: 40,
+                  width: 40,
+                  fit: BoxFit.contain,
+                ),
+              ),
             )),
         const SizedBox(width: 10),
-        const Column(
-          children: <Widget>[
-            Text(
-              'Hello, Walton',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 15,
-              ),
+        Container(
+          margin: const EdgeInsets.only(top: 5),
+          child: const Text(
+            'Ryan',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.w300,
             ),
-            SizedBox(
-              height: 4,
-            ),
-            Text(
-              'January-01-2008',
-              style: TextStyle(
-                color: Colors.grey,
-                fontSize: 12,
-              ),
-            )
-          ],
+          ),
         ),
       ],
     ),
     actions: <Widget>[
-      IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.notifications_none_sharp,
-            color: Colors.white,
-          ))
+      Container(
+        padding: const EdgeInsets.only(right: 20),
+        child: GestureDetector(
+          onTap: () {
+            //impl on click logic here
+          },
+          child: Image.asset(
+            'assets/images/notification_icon.png',
+            height: 24,
+            width: 24,
+            fit: BoxFit.contain,
+          ),
+        ),
+      ),
     ],
   );
 }
@@ -164,18 +170,18 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 24,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ),
           const Padding(
-            padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+            padding: EdgeInsets.fromLTRB(10, 5, 0, 0),
             child: Text(
-              '6 events',
+              '3 Events',
               style: TextStyle(
-                color: Colors.grey,
+                color: Colors.black,
                 fontSize: 14,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),
@@ -184,13 +190,13 @@ class _HomePageState extends State<HomePage> {
             height: 10,
           ),
           const Padding(
-            padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+            padding: EdgeInsets.fromLTRB(10, 5, 0, 0),
             child: Text(
-              '3 pending task',
+              '4 pending task',
               style: TextStyle(
-                color: Colors.grey,
+                color: Colors.black,
                 fontSize: 14,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),
