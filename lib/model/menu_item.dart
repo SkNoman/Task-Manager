@@ -1,33 +1,36 @@
 import 'package:flutter/material.dart';
 
 class Menu {
-  IconData? icon;
+  String? icon;
   String? title;
   Color? bgColor;
+  String? route;
 
-  Menu({this.icon, this.title, this.bgColor});
+  Menu({this.icon, this.title, this.bgColor, this.route});
   static List<Menu> generateMenus() {
     return [
       Menu(
-          icon: Icons.task,
+          icon: 'assets/images/task_icon.png',
           title: 'Tasks',
-          bgColor: const Color.fromARGB(255, 241, 233, 156)),
+          bgColor: const Color.fromRGBO(255, 247, 235, 1),
+          route: '/taskcreate'),
       Menu(
-          icon: Icons.money,
+          icon: 'assets/images/budget_icon.png',
           title: 'Budget',
-          bgColor: const Color.fromARGB(255, 240, 172, 242)),
+          bgColor: const Color.fromRGBO(255, 235, 239, 1),
+          route: '/budgetpage'),
       Menu(
-          icon: Icons.food_bank,
+          icon: 'assets/images/food_icon.png',
           title: 'Food',
-          bgColor: const Color.fromARGB(255, 148, 239, 156)),
+          bgColor: const Color.fromRGBO(238, 255, 235, 1)),
       Menu(
-          icon: Icons.medical_information,
+          icon: 'assets/images/medical_icon.png',
           title: 'Medical',
-          bgColor: const Color.fromARGB(255, 141, 168, 243)),
+          bgColor: const Color.fromRGBO(235, 246, 255, 1)),
       Menu(
-          icon: Icons.event,
+          icon: 'assets/images/event_icon.png',
           title: 'Event',
-          bgColor: const Color.fromARGB(255, 172, 174, 171)),
+          bgColor: const Color.fromRGBO(241, 241, 241, 1)),
     ];
   }
 }

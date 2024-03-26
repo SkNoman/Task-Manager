@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task_manager/screens/profilepage.dart';
 import 'package:task_manager/widgets/currentevents.dart';
 import 'package:task_manager/widgets/menus.dart';
+import 'package:task_manager/widgets/pendingevents.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -178,9 +179,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          const CurrentEventList(
-            listType: 'events',
-          ),
+          const CurrentEventList(),
           const SizedBox(
             height: 10,
           ),
@@ -195,9 +194,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          const CurrentEventList(
-            listType: 'task',
-          ),
+          const PendingEventList(),
           Expanded(child: Menus()),
         ],
       ),
