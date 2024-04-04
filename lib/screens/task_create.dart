@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager/widgets/custom_bg.dart';
+import 'package:task_manager/widgets/tasklist.dart';
 
 class TaskCreate extends StatefulWidget {
   const TaskCreate({super.key});
@@ -24,6 +25,7 @@ class _TaskCreateState extends State<TaskCreate> {
               ),
             ),
           ),
+          const TaskList(),
         ],
       ),
     );

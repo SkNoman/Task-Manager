@@ -25,7 +25,7 @@ class _CurrentEventListState extends State<CurrentEventList> {
     const CurrentEventCardItem(
       urlImage: 'assets/images/engagement-ring.png',
       title: 'Engagement',
-      type: 'Noman & Enni',
+      type: 'Noman & Tunna',
     ),
   ];
 
